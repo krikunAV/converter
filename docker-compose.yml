@@ -16,6 +16,7 @@ services:
       context: ./docker/php-fpm
     volumes:
       - ./app:/symfony
+    restart: always
     container_name: symfony-php-fpm
     depends_on:
       - mysql
